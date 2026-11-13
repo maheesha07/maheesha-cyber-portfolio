@@ -1,42 +1,51 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="Maheesha Dassanayake — cybersecurity portfolio and projects">
 
   <title>Maheesha Dassanayake | Cybersecurity Portfolio</title>
-  <meta name="description" content="Cybersecurity portfolio of Maheesha Dassanayake. Explore Python security projects, networking, Linux skills and cybersecurity training.">
-  <meta name="theme-color" content="#070c0d">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
+  <a class="skip" href="#main">Skip to content</a>
+
   <!-- NAVIGATION -->
   <header class="header">
-    <nav class="navbar container" aria-label="Main navigation">
+    <nav class="wrap nav" aria-label="Main navigation">
 
-      <a href="#home" class="logo" aria-label="Back to home">
-        <span class="logo-symbol">&gt;_</span> MD<span class="pink">.</span>
+      <a class="logo" href="#home" aria-label="Maheesha Dassanayake home">
+        [MD]<span class="pink">.</span>
       </a>
 
       <button
-        class="menu-toggle"
-        id="menu-toggle"
+        class="menu"
         type="button"
-        aria-label="Toggle navigation"
-        aria-controls="nav-links"
-        aria-expanded="false">
+        aria-expanded="false"
+        aria-controls="navlinks"
+        aria-label="Open navigation"
+      >
         ☰
       </button>
 
-      <div class="nav-links" id="nav-links">
-        <a href="#home" class="active">HOME</a>
+      <div class="navlinks" id="navlinks">
+        <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
         <a href="#skills">SKILLS</a>
         <a href="#projects">PROJECTS</a>
@@ -44,140 +53,117 @@
         <a href="#contact">CONTACT</a>
       </div>
 
-      <div class="nav-socials">
-        <a href="https://github.com/maheesha07"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="GitHub profile">GH</a>
-
-        <a href="https://www.linkedin.com/in/maheesha-dassnayake-537360392/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="LinkedIn profile">IN</a>
-      </div>
+      <span class="nav-status">
+        <i></i> OPEN TO CONNECT
+      </span>
 
     </nav>
   </header>
 
-  <main>
+  <main id="main">
 
     <!-- HERO -->
-    <section class="hero container" id="home">
+    <section id="home" class="hero wrap">
 
-      <div class="hero-visual">
-        <div class="terminal-window">
+      <div class="hero-art">
 
-          <div class="terminal-header">
-            <div class="terminal-dots">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <span>SECURITY_LAB.exe</span>
-          </div>
-
-          <div class="terminal-body">
-            <div class="terminal-lines">
-              <p>&gt; INITIALIZING SECURITY LAB...</p>
-              <p>&gt; LOADING NETWORK MODULES...</p>
-              <p>&gt; STARTING LINUX ENVIRONMENT...</p>
-              <p class="terminal-success">[ SYSTEM ONLINE ]</p>
-            </div>
-
-            <div class="cyber-art">
-              <div class="art-circle">
-                <span>⌘</span>
-              </div>
-
-              <div class="art-code">
-                <span>01001001</span>
-                <span>10110110</span>
-                <span>01101001</span>
-                <span>11001010</span>
-              </div>
-            </div>
-
-            <div class="terminal-message">
-              THINK. ANALYZE. SECURE.
-            </div>
-          </div>
+        <div class="art-bar">
+          <span>● ● ●</span>
+          <span>SECURITY_WORKSTATION.exe</span>
         </div>
+
+        <!-- Corrected image path -->
+        <img
+         src="hacker-workstation.svg"
+          width="900"
+          height="780"
+          alt="Cyberpunk illustration of a hooded cybersecurity learner at a glowing multi-monitor workstation"
+        >
+
+        <div class="art-bar art-footer">
+          <span>▣ SYSTEM ONLINE</span>
+          <span>CONNECTION SECURE</span>
+        </div>
+
       </div>
 
-      <div class="hero-content">
+      <div class="hero-copy">
 
-        <div class="eyebrow">
-          [ CYBERSECURITY • NETWORKING • LINUX ]
-        </div>
+        <p class="eyebrow">▮ HELLO WORLD, I'M</p>
 
         <h1>
           MAHEESHA
           <span>DASSANAYAKE</span>
         </h1>
 
-        <h2>CYBER SECURITY HND UNDERGRADUATE</h2>
+        <p class="role">
+          [ CYBER SECURITY HND UNDERGRADUATE ]
+        </p>
 
-        <p class="hero-description">
+        <p class="intro">
           Passionate about ethical hacking, networking,
           Linux and cybersecurity. Building practical
-          security skills through personal projects,
+          security skills through Python projects,
           hands-on labs and continuous learning.
         </p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="button primary">
-            VIEW PROJECTS <span>→</span>
+        <div class="actions">
+
+          <a class="btn primary" href="#projects">
+            VIEW PROJECTS ↗
           </a>
 
-          <a href="#contact" class="button secondary">
-            CONNECT WITH ME <span>→</span>
+          <a class="btn outline" href="#contact">
+            CONNECT WITH ME ↗
           </a>
+
         </div>
 
-      </div>
-    </section>
-
-    <!-- PORTFOLIO HIGHLIGHTS -->
-    <section class="stats container" aria-label="Portfolio highlights">
-
-      <div class="stat">
-        <span class="stat-icon">⌘</span>
-        <div>
-          <h3>02</h3>
-          <p>Completed Projects</p>
+        <div class="hero-foot">
+          <span>● BASED IN SRI LANKA</span>
+          <span>SCROLL TO EXPLORE ↓</span>
         </div>
-      </div>
 
-      <div class="stat">
-        <span class="stat-icon">◇</span>
-        <div>
-          <h3>01</h3>
-          <p>Completed Cybersecurity Course</p>
-        </div>
-      </div>
-
-      <div class="stat">
-        <span class="stat-icon">∞</span>
-        <div>
-          <h3>∞</h3>
-          <p>Learning Mindset</p>
-        </div>
       </div>
 
     </section>
+
+    <!-- PORTFOLIO STATISTICS -->
+    <div class="stats wrap" aria-label="Portfolio highlights">
+
+      <div>
+        <b>02</b>
+        <span>COMPLETED PROJECTS</span>
+      </div>
+
+      <div>
+        <b>01</b>
+        <span>COMPLETED COURSE</span>
+      </div>
+
+      <div>
+        <b>∞</b>
+        <span>LEARNING MINDSET</span>
+      </div>
+
+    </div>
 
     <!-- ABOUT -->
-    <section class="section container" id="about">
+    <section class="section wrap" id="about">
 
-      <div class="section-heading">
-        <span>01 / ABOUT</span>
-        <h2>About <span>Me</span></h2>
+      <div class="heading">
+        <small>01 / WHO AM I</small>
+        <h2>ABOUT <em>ME_</em></h2>
+        <p>Curiosity drives my learning.</p>
       </div>
 
       <div class="about-grid">
 
-        <div class="about-text">
-          <h3>Curiosity drives my learning.</h3>
+        <article class="panel">
+
+          <small>[ PROFILE_OVERVIEW ]</small>
+
+          <h3>THINK. ANALYZE. SECURE.</h3>
 
           <p>
             I'm Maheesha Dassanayake, an aspiring
@@ -194,329 +180,367 @@
           </p>
 
           <p>
-            I'm currently building my practical knowledge
+            I'm currently building practical knowledge
             through personal projects and virtual labs
             using tools such as Kali Linux and VirtualBox.
+            My goal is to gain industry experience
+            through a cybersecurity internship.
           </p>
 
-          <p>
-            My career goal is to gain industry experience
-            through a cybersecurity internship and
-            continue growing towards cybersecurity
-            engineering.
-          </p>
-        </div>
+        </article>
 
-        <div class="about-panel">
+        <aside class="panel terminal">
 
-          <div class="panel-label">CURRENT STATUS</div>
-          <h3>LEARNING MODE</h3>
-
-          <p>
-            <span class="status-dot"></span>
-            Interested in cybersecurity internship opportunities
-          </p>
-
-          <div class="about-code">
-            <p>user: maheesha</p>
-            <p>location: sri_lanka</p>
-            <p>field: cybersecurity</p>
-            <p>environment: linux</p>
-            <p>interests: ethical_hacking</p>
-            <p>goal: <span>cybersecurity_engineer</span></p>
+          <div class="term-head">
+            ● ● ● &nbsp; profile.sh
           </div>
 
-        </div>
+          <div class="term-body">
+
+            <p>
+              <em>$</em> whoami
+              <br>
+              maheesha_dassanayake
+            </p>
+
+            <p>
+              <em>$</em> cat interests.txt
+              <br>
+              linux / networking / security
+            </p>
+
+            <p>
+              <em>$</em> echo $GOAL
+              <br>
+              cybersecurity_engineer
+            </p>
+
+            <p>
+              <em>$</em> echo $STATUS
+              <br>
+              <strong>OPEN_TO_INTERNSHIPS ▮</strong>
+            </p>
+
+          </div>
+
+        </aside>
+
       </div>
+
     </section>
 
     <!-- TECHNICAL SKILLS -->
-    <section class="section container" id="skills">
+    <section class="section wrap" id="skills">
 
-      <div class="section-heading">
-        <span>02 / TECHNICAL FOUNDATION</span>
-        <h2>Technical <span>Skills</span></h2>
+      <div class="heading">
+        <small>02 / MY TOOLKIT</small>
+        <h2>TECHNICAL <em>SKILLS_</em></h2>
+        <p>
+          Technologies and concepts I'm learning
+          and practicing.
+        </p>
       </div>
 
-      <p class="section-intro">
-        Technologies and security concepts I'm
-        currently learning and practicing.
-      </p>
+      <div class="cards skills">
 
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <span class="skill-icon">⌘</span>
-          <h3>Linux</h3>
+        <article class="panel">
+          <div class="glyph">⌘</div>
+          <h3>LINUX</h3>
           <p>
-            Linux fundamentals, terminal commands,
-            file systems and command-line environments.
+            Linux fundamentals, terminal commands
+            and file systems.
           </p>
-        </div>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">⌁</span>
-          <h3>Networking</h3>
+        <article class="panel">
+          <div class="glyph">⌁</div>
+          <h3>NETWORKING</h3>
           <p>
             TCP/IP, DNS, ports, protocols
             and networking fundamentals.
           </p>
-        </div>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">&lt;/&gt;</span>
-          <h3>Python</h3>
+        <article class="panel">
+          <div class="glyph">&lt;/&gt;</div>
+          <h3>PYTHON</h3>
           <p>
-            Python fundamentals, basic scripting
-            and introductory security automation.
+            Python scripting fundamentals and
+            introductory security automation.
           </p>
-        </div>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">◇</span>
-          <h3>Cybersecurity</h3>
+        <article class="panel">
+          <div class="glyph">◈</div>
+          <h3>CYBERSECURITY</h3>
           <p>
-            Security fundamentals, ethical hacking
-            concepts and defensive security.
+            Ethical hacking concepts, security
+            fundamentals and defensive security.
           </p>
-        </div>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">▣</span>
-          <h3>Kali Linux</h3>
+        <article class="panel">
+          <div class="glyph">▣</div>
+          <h3>KALI LINUX</h3>
           <p>
             Exploring security tools in authorized
-            learning and laboratory environments.
+            learning environments.
           </p>
-        </div>
+        </article>
 
-        <div class="skill-card">
-          <span class="skill-icon">▤</span>
-          <h3>VirtualBox</h3>
+        <article class="panel">
+          <div class="glyph">▤</div>
+          <h3>VIRTUALBOX</h3>
           <p>
             Virtual machines and isolated
-            cybersecurity learning environments.
+            cybersecurity practice labs.
           </p>
-        </div>
+        </article>
 
       </div>
+
     </section>
 
     <!-- FEATURED PROJECTS -->
-    <section class="section container" id="projects">
+    <section class="section wrap" id="projects">
 
-      <div class="section-heading">
-        <span>03 / MY WORK</span>
-        <h2>Featured <span>Projects</span></h2>
+      <div class="heading">
+        <small>03 / SELECTED WORK</small>
+        <h2>FEATURED <em>PROJECTS_</em></h2>
+        <p>Personal cybersecurity learning projects.</p>
       </div>
 
-      <p class="section-intro">
-        Personal cybersecurity learning projects.
-        Completed projects and planned work
-        are clearly identified.
-      </p>
+      <div class="cards projects">
 
-      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <article class="panel project">
 
-        <!-- PROJECT 01 -->
-        <article class="project-card">
-
-          <div class="project-number">
-            PROJECT_01 / COMPLETED
+          <div class="project-top">
+            <span>PROJECT_001</span>
+            <span class="complete">● COMPLETED</span>
           </div>
 
-          <div class="project-symbol">&lt;/&gt;</div>
+          <div class="glyph">⌁</div>
 
-          <h3>Python Network Port Scanner</h3>
+          <h3>PYTHON NETWORK PORT SCANNER</h3>
 
           <p>
-            A completed Python learning project
-            exploring network port scanning,
-            TCP connections and networking concepts.
+            A completed Python project exploring
+            TCP connections, network port scanning
+            and networking concepts.
           </p>
 
           <div class="tags">
-            <span>Python</span>
-            <span>Networking</span>
-            <span>Completed</span>
+            <span>PYTHON</span>
+            <span>NETWORKING</span>
+            <span>TCP</span>
           </div>
 
           <a
             href="https://github.com/maheesha07/Network-Scanner"
             target="_blank"
             rel="noopener noreferrer"
-            class="project-link">
-            VIEW SOURCE CODE →
+          >
+            VIEW SOURCE CODE ↗
           </a>
 
         </article>
 
-        <!-- PROJECT 02 -->
-        <article class="project-card">
+        <!-- PROJECT 2 -->
+        <article class="panel project">
 
-          <div class="project-number">
-            PROJECT_02 / COMPLETED
+          <div class="project-top">
+            <span>PROJECT_002</span>
+            <span class="complete">● COMPLETED</span>
           </div>
 
-          <div class="project-symbol">⌘</div>
+          <div class="glyph">▤</div>
 
-          <h3>Security Log Analyzer</h3>
+          <h3>SECURITY LOG ANALYZER</h3>
 
           <p>
-            A completed cybersecurity learning project
-            exploring security log processing,
-            log analysis and security-related events.
+            A completed learning project exploring
+            security log processing, log analysis
+            and security-related events.
           </p>
 
           <div class="tags">
-            <span>Python</span>
-            <span>Log Analysis</span>
-            <span>Completed</span>
+            <span>PYTHON</span>
+            <span>LOG ANALYSIS</span>
           </div>
 
           <a
             href="https://github.com/maheesha07/Security-Log-Analyzer"
             target="_blank"
             rel="noopener noreferrer"
-            class="project-link">
-            VIEW SOURCE CODE →
+          >
+            VIEW SOURCE CODE ↗
           </a>
 
         </article>
 
-        <!-- PROJECT 03 -->
-        <article class="project-card">
+        <!-- PROJECT 3 -->
+        <article class="panel project">
 
-          <div class="project-number">
-            PROJECT_03 / PLANNED
+          <div class="project-top">
+            <span>PROJECT_003</span>
+            <span class="planned">◇ PLANNED</span>
           </div>
 
-          <div class="project-symbol">◇</div>
+          <div class="glyph">◈</div>
 
-          <h3>Home Wi-Fi Security Assessment</h3>
+          <h3>HOME WI-FI SECURITY ASSESSMENT</h3>
 
           <p>
-            A planned learning project focused on
-            understanding home router configurations,
-            Wi-Fi security settings and ways to improve
-            security in an authorized home network.
+            A planned project about router
+            configuration, Wi-Fi security settings
+            and security improvements on an
+            authorized home network.
           </p>
 
           <div class="tags">
-            <span>Networking</span>
-            <span>Wi-Fi Security</span>
-            <span>Planned</span>
+            <span>WI-FI</span>
+            <span>NETWORKING</span>
           </div>
 
-          <span class="project-link">
-            PLANNED PROJECT
+          <span class="coming">
+            COMING SOON
           </span>
 
         </article>
 
       </div>
+
     </section>
 
-    <!-- CERTIFICATIONS AND TRAINING -->
-    <section class="section container" id="certifications">
+    <!-- CERTIFICATIONS -->
+    <section class="section wrap" id="certifications">
 
-      <div class="section-heading">
-        <span>04 / CONTINUOUS LEARNING</span>
-        <h2>Certifications &amp; <span>Training</span></h2>
+      <div class="heading">
+        <small>04 / CONTINUOUS LEARNING</small>
+
+        <h2>
+          CERTIFICATIONS <em>&amp; TRAINING_</em>
+        </h2>
+
+        <p>
+          Courses and ongoing cybersecurity learning.
+        </p>
       </div>
 
-      <p class="section-intro">
-        Cybersecurity courses and training
-        supporting my technical development.
-      </p>
+      <div class="certs">
 
-      <div class="cert-list">
+        <article class="panel cert">
 
-        <div class="cert-card">
-          <div class="cert-icon">01</div>
+          <b>01</b>
 
           <div>
-            <h3>Introduction to Cybersecurity</h3>
+            <h3>INTRODUCTION TO CYBERSECURITY</h3>
             <p>Cisco Networking Academy</p>
           </div>
 
-          <span class="cert-status">
-            COMPLETED
+          <span class="complete">
+            ● COMPLETED
           </span>
-        </div>
 
-        <div class="cert-card">
-          <div class="cert-icon">02</div>
+        </article>
+
+        <article class="panel cert">
+
+          <b>02</b>
 
           <div>
-            <h3>Fortinet Training Institute</h3>
-            <p>Ongoing cybersecurity learning</p>
+            <h3>FORTINET TRAINING INSTITUTE</h3>
+
+            <p>
+              Ongoing cybersecurity learning —
+              not a completed certification
+            </p>
           </div>
 
-          <span class="cert-status learning">
-            LEARNING
+          <span class="planned">
+            ◇ LEARNING
           </span>
-        </div>
+
+        </article>
 
       </div>
 
     </section>
 
     <!-- CONTACT -->
-    <section class="section container" id="contact">
+    <section class="section wrap" id="contact">
 
-      <div class="contact-box">
+      <div class="heading">
+        <small>05 / GET IN TOUCH</small>
 
-        <span class="eyebrow">05 / GET IN TOUCH</span>
+        <h2>
+          LET'S <em>CONNECT_</em>
+        </h2>
 
-        <h2>Let's <span>Connect.</span></h2>
+        <p>
+          Ready to connect and explore opportunities.
+        </p>
+      </div>
+
+      <div class="panel contact">
+
+        <h3>HAVE AN OPPORTUNITY IN MIND?</h3>
 
         <p>
           I'm interested in cybersecurity internship
           opportunities, security projects and
           connecting with cybersecurity professionals.
-          Feel free to reach out through GitHub or LinkedIn.
+          Feel free to reach out through GitHub
+          or LinkedIn.
         </p>
 
-        <div class="contact-links">
+        <div class="actions">
 
           <a
+            class="btn primary"
             href="https://github.com/maheesha07"
             target="_blank"
             rel="noopener noreferrer"
-            class="button primary">
-            GITHUB →
+          >
+            GITHUB ↗
           </a>
 
           <a
+            class="btn outline"
             href="https://www.linkedin.com/in/maheesha-dassnayake-537360392/"
             target="_blank"
             rel="noopener noreferrer"
-            class="button secondary">
-            LINKEDIN →
+          >
+            LINKEDIN ↗
           </a>
 
         </div>
 
+        <p class="contact-ending">
+          [ END_OF_TRANSMISSION ]
+        </p>
+
       </div>
+
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer wrap">
 
     <p>
       © <span id="year">2026</span>
-      Maheesha Dassanayake.
-      Built with curiosity.
+      MAHEESHA DASSANAYAKE.
+      BUILT WITH CURIOSITY.
     </p>
 
-    <a href="#home">BACK TO TOP ↑</a>
+    <a href="#home">
+      BACK TO TOP ↑
+    </a>
 
   </footer>
-
-  <script src="script.js"></script>
 
 </body>
 </html>
