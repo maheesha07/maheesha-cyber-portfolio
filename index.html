@@ -4,104 +4,448 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maheesha Dassanayake | Cybersecurity</title>
-  <meta name="description" content="Cybersecurity portfolio of Maheesha Dassanayake. Explore my skills, certifications and projects.">
+
+  <title>Maheesha Dassanayake | Cybersecurity Portfolio</title>
+
+  <meta name="description" content="Maheesha Dassanayake - Cyber Security Undergraduate. Explore my cybersecurity projects, skills and certifications.">
+
+  <meta name="theme-color" content="#070c0d">
+
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header>
-    <nav class="navbar">
-      <a href="#" class="logo">MD<span>.</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="navbar container">
+
+      <a href="#home" class="logo">
+        <span class="logo-symbol">&gt;_</span> MD<span class="pink">.</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#certifications">CERTIFICATIONS</a>
+        <a href="#contact">CONTACT</a>
       </div>
+
+      <div class="nav-socials">
+        <a href="https://github.com/" target="_blank"
+          rel="noopener noreferrer" aria-label="GitHub">GH</a>
+        <a href="https://linkedin.com/" target="_blank"
+          rel="noopener noreferrer" aria-label="LinkedIn">IN</a>
+      </div>
+
     </nav>
   </header>
 
+
   <main>
-    <section class="hero">
-      <p class="eyebrow">CYBERSECURITY PORTFOLIO</p>
-      <h1>Hi, I'm <span>Maheesha</span><br>Dassanayake.</h1>
-      <h2>Cyber Security Undergraduate</h2>
-      <p class="intro">
-        Exploring cybersecurity, networking and Linux.
-        Building practical skills through hands-on projects
-        and continuous learning.
-      </p>
-      <a href="#projects" class="btn">Explore My Work</a>
-    </section>
 
-    <section id="about" class="section">
-      <p class="eyebrow">01 / ABOUT</p>
-      <h2>About Me</h2>
-      <p>
-        I'm a Cyber Security undergraduate interested in
-        network security, ethical hacking and penetration
-        testing. I enjoy learning through practical labs,
-        research and personal projects.
-      </p>
-    </section>
+    <!-- HERO -->
+    <section class="hero container" id="home">
 
-    <section id="skills" class="section">
-      <p class="eyebrow">02 / EXPERTISE</p>
-      <h2>Technical Skills</h2>
-      <div class="cards">
-        <div class="card">Linux</div>
-        <div class="card">Networking</div>
-        <div class="card">Python</div>
-        <div class="card">Cybersecurity</div>
-        <div class="card">Kali Linux</div>
-        <div class="card">VirtualBox</div>
+      <div class="hero-visual">
+
+        <div class="terminal-window">
+
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span>SECURITY_LAB.exe</span>
+          </div>
+
+          <div class="terminal-body">
+
+            <div class="terminal-lines">
+              <p>&gt; INITIALIZING SECURITY LAB...</p>
+              <p>&gt; LOADING NETWORK MODULES...</p>
+              <p>&gt; STARTING LINUX ENVIRONMENT...</p>
+              <p class="terminal-success">
+                [ SYSTEM ONLINE ]
+              </p>
+            </div>
+
+            <div class="cyber-art">
+              <div class="art-circle">
+                <span>⌘</span>
+              </div>
+
+              <div class="art-code">
+                <span>01001001</span>
+                <span>10110110</span>
+                <span>01101001</span>
+                <span>11001010</span>
+              </div>
+            </div>
+
+            <div class="terminal-message">
+              THINK. ANALYZE. SECURE.
+            </div>
+
+          </div>
+        </div>
+
       </div>
+
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          [ CYBERSECURITY • NETWORKING • LINUX ]
+        </div>
+
+        <h1>
+          MAHEESHA
+          <span>DASSANAYAKE</span>
+        </h1>
+
+        <h2>CYBER SECURITY UNDERGRADUATE</h2>
+
+        <p class="hero-description">
+          Exploring cybersecurity, networking and Linux.
+          Developing practical skills through hands-on labs,
+          security projects and continuous learning.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="button primary">
+            VIEW PROJECTS <span>→</span>
+          </a>
+
+          <a href="#about" class="button secondary">
+            MY STORY <span>→</span>
+          </a>
+        </div>
+
+      </div>
+
     </section>
 
-    <section id="projects" class="section">
-      <p class="eyebrow">03 / PROJECTS</p>
-      <h2>Featured Projects</h2>
-      <div class="cards">
-        <div class="card">
+
+    <!-- STATS -->
+    <section class="stats container">
+
+      <div class="stat">
+        <span class="stat-icon">⌘</span>
+        <div>
+          <h3>03</h3>
+          <p>Learning Areas</p>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="stat-icon">◇</span>
+        <div>
+          <h3>02+</h3>
+          <p>Credentials</p>
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="stat-icon">∞</span>
+        <div>
+          <h3>∞</h3>
+          <p>Learning Mindset</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+
+      <div class="section-heading">
+        <span>01 / ABOUT</span>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <h3>Curiosity drives my learning.</h3>
+
+          <p>
+            I'm a Cyber Security undergraduate interested in
+            network security, ethical hacking and penetration
+            testing.
+          </p>
+
+          <p>
+            I enjoy exploring Linux environments, understanding
+            how networks work and learning cybersecurity through
+            practical exercises and personal projects.
+          </p>
+
+          <p>
+            My goal is to continuously develop my technical
+            knowledge and grow in the cybersecurity field.
+          </p>
+        </div>
+
+        <div class="about-panel">
+          <div class="panel-label">CURRENT STATUS</div>
+          <h3>LEARNING MODE</h3>
+          <p><span class="status-dot"></span> Available for learning opportunities</p>
+          <div class="about-code">
+            <p>user: maheesha</p>
+            <p>field: cybersecurity</p>
+            <p>environment: linux</p>
+            <p>status: <span>active</span></p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+
+      <div class="section-heading">
+        <span>02 / EXPERTISE</span>
+        <h2>Technical <span>Skills</span></h2>
+      </div>
+
+      <p class="section-intro">
+        Technologies and areas I'm currently learning and exploring.
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <span class="skill-icon">⌘</span>
+          <h3>Linux</h3>
+          <p>Linux fundamentals and command-line environments.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">⌁</span>
+          <h3>Networking</h3>
+          <p>TCP/IP, DNS, ports and network fundamentals.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">&lt;/&gt;</span>
+          <h3>Python</h3>
+          <p>Programming fundamentals and basic automation.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">◇</span>
+          <h3>Cybersecurity</h3>
+          <p>Security fundamentals and defensive concepts.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">▣</span>
+          <h3>Kali Linux</h3>
+          <p>Exploring security tools in authorized lab environments.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">▤</span>
+          <h3>VirtualBox</h3>
+          <p>Virtual machines and cybersecurity lab environments.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+
+      <div class="section-heading">
+        <span>03 / MY WORK</span>
+        <h2>Featured <span>Projects</span></h2>
+      </div>
+
+      <p class="section-intro">
+        Practical projects and experiments from my learning journey.
+      </p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-number">PROJECT_01</div>
+          <div class="project-symbol">&lt;/&gt;</div>
           <h3>Python Network Port Scanner</h3>
-          <p>A learning project exploring network ports and services.</p>
-        </div>
-        <div class="card">
+          <p>
+            A Python learning project exploring TCP ports,
+            network connections and basic port scanning.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Networking</span>
+          </div>
+          <a href="https://github.com/" target="_blank"
+            rel="noopener noreferrer" class="project-link">
+            VIEW PROJECT →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">PROJECT_02</div>
+          <div class="project-symbol">⌘</div>
           <h3>Security Log Analyzer</h3>
-          <p>A project exploring security log analysis and event detection.</p>
-        </div>
-        <div class="card">
-          <h3>Home Wi-Fi Security</h3>
-          <p>A personal project exploring home network security.</p>
-        </div>
+          <p>
+            A project exploring security log processing,
+            event analysis and identifying suspicious patterns.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Log Analysis</span>
+          </div>
+          <a href="https://github.com/" target="_blank"
+            rel="noopener noreferrer" class="project-link">
+            VIEW PROJECT →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">PROJECT_03</div>
+          <div class="project-symbol">◇</div>
+          <h3>Home Wi-Fi Security Assessment</h3>
+          <p>
+            A personal learning project exploring router
+            configuration and home network security.
+          </p>
+          <div class="tags">
+            <span>Networking</span>
+            <span>Security</span>
+          </div>
+          <a href="https://github.com/" target="_blank"
+            rel="noopener noreferrer" class="project-link">
+            VIEW PROJECT →
+          </a>
+        </article>
+
       </div>
+
+      <p class="placeholder-note">
+        Project descriptions are learning-project placeholders.
+        Add your actual GitHub project links before publishing.
+      </p>
+
     </section>
 
-    <section id="certifications" class="section">
-      <p class="eyebrow">04 / LEARNING</p>
-      <h2>Certifications</h2>
-      <div class="cards">
-        <div class="card">Cisco – Introduction to Cybersecurity</div>
-        <div class="card">Fortinet Training Institute – Training</div>
-        <div class="card">OCN London – Level 3 Diploma in IT</div>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section container" id="certifications">
+
+      <div class="section-heading">
+        <span>04 / ACHIEVEMENTS</span>
+        <h2>Certifications &amp; <span>Education</span></h2>
       </div>
+
+      <div class="cert-list">
+
+        <div class="cert-card">
+          <div class="cert-icon">01</div>
+          <div>
+            <h3>Introduction to Cybersecurity</h3>
+            <p>Cisco Networking Academy</p>
+          </div>
+          <span class="cert-status">COMPLETED</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">02</div>
+          <div>
+            <h3>Level 3 Diploma in IT</h3>
+            <p>OCN London</p>
+          </div>
+          <span class="cert-status">COMPLETED</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">03</div>
+          <div>
+            <h3>HND in Cyber Security</h3>
+            <p>ESOFT</p>
+          </div>
+          <span class="cert-status learning">IN PROGRESS</span>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">04</div>
+          <div>
+            <h3>Fortinet Training</h3>
+            <p>Fortinet Training Institute</p>
+          </div>
+          <span class="cert-status learning">LEARNING</span>
+        </div>
+
+      </div>
+
     </section>
 
-    <section id="contact" class="section">
-      <p class="eyebrow">05 / CONTACT</p>
-      <h2>Let's Connect</h2>
-      <p>Interested in cybersecurity, technology and collaboration.</p>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+
+      <div class="contact-box">
+
+        <span class="eyebrow">05 / GET IN TOUCH</span>
+
+        <h2>Let's <span>Connect.</span></h2>
+
+        <p>
+          Interested in cybersecurity, technology,
+          learning opportunities and collaboration?
+          Let's connect.
+        </p>
+
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank"
+            rel="noopener noreferrer" class="button primary">
+            GITHUB →
+          </a>
+
+          <a href="https://linkedin.com/" target="_blank"
+            rel="noopener noreferrer" class="button secondary">
+            LINKEDIN →
+          </a>
+        </div>
+
+      </div>
+
     </section>
+
   </main>
 
-  <footer>
-    <p>© 2026 Maheesha Dassanayake. Built with curiosity.</p>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      © <span id="year">2026</span> Maheesha Dassanayake.
+      Built with curiosity.
+    </p>
+    <a href="#home">BACK TO TOP ↑</a>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
